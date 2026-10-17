@@ -1,0 +1,1 @@
+import{access}from"node:fs/promises";for(const n of ['core', 'config', 'events', 'runtime', 'security', 'logging', 'models', 'tools', 'workspace', 'mcp', 'agent', 'testing', 'sdk', 'index'])await access(`src/${n}.ts`);console.log("Source valid")

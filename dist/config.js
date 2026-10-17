@@ -1,0 +1,4 @@
+export function defineConfig(i = {}) { const l = { timeoutMs: i.limits?.timeoutMs ?? 120000, maxBytes: i.limits?.maxBytes ?? 2_000_000, concurrency: i.limits?.concurrency ?? 4, maxResults: i.limits?.maxResults ?? 200 }; for (const [k, v] of Object.entries(l))
+    if (!Number.isInteger(v) || v <= 0)
+        throw RangeError(`Invalid ${k}`); return Object.freeze({ workspaceRoot: i.workspaceRoot ?? ".", limits: Object.freeze(l) }); }
+//# sourceMappingURL=config.js.map

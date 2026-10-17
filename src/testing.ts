@@ -1,0 +1,1 @@
+import type{ModelRequest}from"./models.js";export class FakeModelProvider{readonly requests:ModelRequest[]=[];constructor(private answer="Ready"){}async complete(r:ModelRequest){this.requests.push(r);return{text:this.answer,model:"fake",usage:{input:0,output:0}}}}

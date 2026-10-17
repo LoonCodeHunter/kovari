@@ -1,0 +1,1 @@
+export interface LogRecord{level:"debug"|"info"|"warn"|"error";message:string;at:number;data?:unknown}export class MemoryLogger{readonly records:LogRecord[]=[];write(level:LogRecord["level"],message:string,data?:unknown){this.records.push(Object.freeze({level,message,at:Date.now(),data}))}clear(){this.records.length=0}}

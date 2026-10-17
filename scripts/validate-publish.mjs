@@ -1,0 +1,1 @@
+import{readFile}from"node:fs/promises";const p=JSON.parse(await readFile("package.json","utf8")),n=await readFile(".npmrc","utf8");if("provenance"in(p.publishConfig??{}))throw Error("Package must not force provenance");if(!n.includes("provenance=false"))throw Error("Local provenance default missing");console.log("Publish configuration valid")

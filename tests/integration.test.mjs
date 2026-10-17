@@ -1,0 +1,1 @@
+import test from"node:test";import assert from"node:assert/strict";import create from"../dist/index.js";test("sdk agent",async()=>assert.equal((await create({model:{async complete(){return{text:"ok"}}}}).agent.run({prompt:"x"})).output,"ok"))
