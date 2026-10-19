@@ -1,4 +1,7 @@
 # Changelog
 
-## 0.1.0
-Initial advanced Kovari foundation with strict TypeScript, explicit exports, generated declarations and maps, portable lockfiles, deterministic tests, package validation, safe local publishing and cross-platform CI.
+## 0.1.11
+
+* Same things as v0.1.1 just the changes in documentation and imagery.
+* Not thing really new here.
+

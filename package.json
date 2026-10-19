@@ -1,6 +1,6 @@
 {
   "name": "kovari",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "description": "Typed policy-driven runtime for auditable AI agents, tools, MCP, events and secure workspaces.",
   "keywords": [
     "kovari",

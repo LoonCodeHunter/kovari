@@ -1,1 +1,1 @@
-import{readFile}from"node:fs/promises";const p=JSON.parse(await readFile("package.json","utf8"));if(p.name!=='kovari'||p.version!=="0.1.1"||p.publishConfig?.provenance!==undefined)throw Error("Package metadata invalid");console.log("Package metadata valid")
+import{readFile}from"node:fs/promises";const p=JSON.parse(await readFile("package.json","utf8"));if(p.name!=='kovari'||p.version!=="0.1.11"||p.publishConfig?.provenance!==undefined)throw Error("Package metadata invalid");console.log("Package metadata valid")
