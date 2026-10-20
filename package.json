@@ -1,6 +1,6 @@
 {
   "name": "kovari",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Typed policy-driven runtime for auditable AI agents, tools, MCP, events and secure workspaces.",
   "keywords": [
     "kovari",
@@ -126,7 +126,8 @@
     "API.md",
     "ARCHITECTURE.md",
     "SECURITY.md",
-    "LICENSE"
+    "LICENSE",
+    "docs"
   ],
   "directories": {
     "doc": "docs",
@@ -139,7 +140,7 @@
     "build": "npm run clean && node node_modules/typescript/bin/tsc -p tsconfig.build.json",
     "build:verify": "npm run build && npm run validate:exports",
     "test": "node --test tests/*.test.mjs",
-    "test:unit": "node --test tests/unit.test.mjs",
+    "test:unit": "node --test tests/unit.test.mjs tests/workspace-security.test.mjs",
     "test:integration": "node --test tests/integration.test.mjs",
     "test:all": "npm run test:unit && npm run test:integration",
     "validate:source": "node scripts/validate-source.mjs",

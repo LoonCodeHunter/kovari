@@ -1,4 +1,4 @@
-export declare const VERSION: "0.1.0";
+export declare const VERSION: "0.1.12";
 export type Json = string | number | boolean | null | Json[] | {
     [key: string]: Json;
 };
